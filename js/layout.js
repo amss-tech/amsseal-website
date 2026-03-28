@@ -78,7 +78,7 @@ const FOOTER_HTML = `
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li>📱 (xxx) xxx-xxxx</li>
+          <li>📱 (205) 807-7685</li>
           <li>📧 info@amsseal.com</li>
           <li>🌐 amsseal.com</li>
           <li>📍 Serving Alabama</li>
