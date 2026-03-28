@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Reviews | A&M Seal and Shield</title>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}.reveal.visible{opacity:1;transform:none}
+.reviews-section{background:var(--slate)}
+.rating-summary{background:#fff;border-radius:20px;padding:36px;box-shadow:var(--card-shadow);display:flex;align-items:center;gap:48px;margin-bottom:56px;flex-wrap:wrap}
+.rating-big{text-align:center;min-width:120px}
+.rating-num{font-family:'Barlow Condensed',sans-serif;font-size:80px;font-weight:900;color:var(--navy);line-height:1}
+.rating-stars{font-size:28px;color:#f59e0b;letter-spacing:2px;margin:4px 0}
+.rating-count{font-size:13px;color:var(--muted);font-weight:600}
+.rating-bars{flex:1;min-width:200px}
+.rbar{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.rbar-label{font-size:13px;font-weight:600;color:var(--navy);width:32px;flex-shrink:0}
+.rbar-track{flex:1;height:8px;background:#e8ecf0;border-radius:100px;overflow:hidden}
+.rbar-fill{height:100%;background:var(--teal);border-radius:100px}
+.rbar-count{font-size:12px;color:var(--muted);width:20px;text-align:right}
+.rating-google{text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.google-badge{background:#f8f9fa;border:1.5px solid #e8ecf0;border-radius:12px;padding:14px 20px;font-size:13px;font-weight:700;color:var(--navy)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review-card{background:#fff;border-radius:var(--radius);padding:26px;box-shadow:var(--card-shadow);display:flex;flex-direction:column;gap:14px;transition:transform .25s}
+.review-card:hover{transform:translateY(-4px)}
+.review-stars{font-size:18px;color:#f59e0b}
+.review-text{font-size:15px;color:var(--text);line-height:1.7;flex:1;font-style:italic}
+.review-text::before{content:'\201C';font-size:40px;color:var(--teal);font-family:'Barlow Condensed',sans-serif;line-height:0.5;display:block;margin-bottom:8px}
+.reviewer{display:flex;align-items:center;gap:12px}
+.reviewer-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--navy-mid),var(--teal));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:17px;flex-shrink:0}
+.reviewer-name{font-weight:700;color:var(--navy);font-size:15px}
+.reviewer-meta{font-size:12px;color:var(--muted)}
+.review-source{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--teal);background:var(--teal-pale);padding:3px 8px;border-radius:100px;text-transform:uppercase;width:fit-content}
+.review-card.featured{grid-column:span 1;border:1.5px solid var(--teal)}
+.placeholder-note{background:rgba(0,145,122,.06);border:1.5px dashed var(--teal);border-radius:12px;padding:20px 24px;margin-bottom:36px;font-size:14px;color:var(--teal);font-weight:600;text-align:center}
+.placeholder-note small{display:block;color:var(--muted);font-weight:400;margin-top:4px}
+.leave-review{background:var(--navy);padding:80px 48px;text-align:center}
+.leave-review h2{font-family:'Barlow Condensed',sans-serif;font-size:52px;font-weight:900;color:#fff;text-transform:uppercase;margin-bottom:14px}
+.leave-review p{color:rgba(255,255,255,.6);font-size:17px;margin-bottom:32px;max-width:580px;margin-left:auto;margin-right:auto}
+.review-platforms{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.platform-btn{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);color:#fff;padding:14px 28px;border-radius:10px;font-weight:700;font-size:15px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;display:flex;align-items:center;gap:8px}
+.platform-btn:hover{background:var(--teal);border-color:var(--teal)}
+.cta-banner{background:linear-gradient(135deg,var(--teal),var(--teal-bright));padding:80px 48px;text-align:center}
+.cta-banner h2{font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#fff;text-transform:uppercase;margin-bottom:12px}
+.cta-banner p{color:rgba(255,255,255,.85);font-size:17px;margin-bottom:28px}
+.btn-white{background:#fff;color:var(--teal);font-weight:800}.btn-white:hover{background:var(--navy);color:#fff}
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr 1fr}.rating-summary{gap:24px}.leave-review{padding:56px 20px}.cta-banner{padding:56px 20px}.cta-banner h2{font-size:42px}}
+@media(max-width:560px){.reviews-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="page-hero">
+  <p class="page-hero-label">Customer Reviews</p>
+  <h1>WHAT OUR<br/><em>CLIENTS SAY</em></h1>
+  <p>Real feedback from Alabama homeowners, realtors, and contractors we've worked with.</p>
+</div>
+<div id="trust-placeholder"></div>
+<section class="section reviews-section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Rating Summary</p>
+    <div class="rating-summary reveal">
+      <div class="rating-big">
+        <div class="rating-num">5.0</div>
+        <div class="rating-stars">★★★★★</div>
+        <div class="rating-count">Based on reviews</div>
+      </div>
+      <div class="rating-bars">
+        <div class="rbar"><span class="rbar-label">5 ★</span><div class="rbar-track"><div class="rbar-fill" style="width:100%"></div></div><span class="rbar-count">–</span></div>
+        <div class="rbar"><span class="rbar-label">4 ★</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">–</span></div>
+        <div class="rbar"><span class="rbar-label">3 ★</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">–</span></div>
+        <div class="rbar"><span class="rbar-label">2 ★</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">–</span></div>
+        <div class="rbar"><span class="rbar-label">1 ★</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">–</span></div>
+      </div>
+      <div class="rating-google">
+        <div class="google-badge">⭐ Google Reviews<br/><span style="font-size:22px;font-family:'Barlow Condensed',sans-serif;font-weight:900;color:var(--teal)">5.0</span></div>
+        <p style="font-size:12px;color:var(--muted);max-width:140px;text-align:center">Update with your Google Business Profile rating</p>
+      </div>
+    </div>
+    <div class="placeholder-note reveal">
+      ⭐ Replace the sample reviews below with your actual Google or Facebook reviews
+      <small>Copy and paste customer review text, update names and dates. Remove the placeholder cards as real reviews come in.</small>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card featured reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">A&M Seal and Shield completely transformed our crawl space. We'd had a musty smell in our house for years — within a week of the encapsulation being done it was completely gone. Scheduling was easy, they showed up on time, and the work was clean and professional. Would recommend to anyone in the area.</p>
+        <div class="reviewer"><div class="reviewer-avatar">J</div><div><div class="reviewer-name">James T.</div><div class="reviewer-meta">Homeowner · Gadsden, AL</div></div></div>
+        <span class="review-source">Google</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">As a real estate agent, I refer A&M regularly. They respond fast, provide written reports, and never let my transactions fall through because of a crawl space issue. My go-to for any home I'm listing or selling that has crawl space concerns.</p>
+        <div class="reviewer"><div class="reviewer-avatar">S</div><div><div class="reviewer-name">Sarah M.</div><div class="reviewer-meta">Real Estate Agent · Huntsville, AL</div></div></div>
+        <span class="review-source">Google</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I called three companies before A&M and they were the only ones who came out for a free estimate without trying to sell me something I didn't need. Honest, fair pricing, and the job was done in one day. Exactly what you want from a contractor.</p>
+        <div class="reviewer"><div class="reviewer-avatar">M</div><div><div class="reviewer-name">Mike R.</div><div class="reviewer-meta">Homeowner · Anniston, AL</div></div></div>
+        <span class="review-source">Facebook</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Our home inspector flagged the crawl space and our buyer was nervous. A&M came out the next day, gave us a written quote, and had the work done before the re-inspection. Sale closed on time. Couldn't have asked for better service.</p>
+        <div class="reviewer"><div class="reviewer-avatar">L</div><div><div class="reviewer-name">Lisa W.</div><div class="reviewer-meta">Home Seller · Talladega, AL</div></div></div>
+        <span class="review-source">Google</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Professional, knowledgeable, and thorough. They explained everything before starting, kept the workspace clean, and the before/after photos they provided are amazing — you can really see the difference. Great company doing great work.</p>
+        <div class="reviewer"><div class="reviewer-avatar">D</div><div><div class="reviewer-name">David K.</div><div class="reviewer-meta">Homeowner · Rainbow City, AL</div></div></div>
+        <span class="review-source">Google</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I've used A&M on two properties now. Both times same experience: fair price, fast scheduling, quality work, and a warranty that actually means something. Highly recommend to any homeowner or contractor needing crawl space work in Alabama.</p>
+        <div class="reviewer"><div class="reviewer-avatar">T</div><div><div class="reviewer-name">Tom H.</div><div class="reviewer-meta">General Contractor · Albertville, AL</div></div></div>
+        <span class="review-source">Facebook</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="leave-review">
+  <h2>WORKED WITH US?</h2>
+  <p>Your review means everything to us — and helps other Alabama homeowners find the help they need. It takes less than 2 minutes.</p>
+  <div class="review-platforms">
+    <a href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review" target="_blank" class="platform-btn">⭐ Leave a Google Review</a>
+    <a href="https://facebook.com/amsseal" target="_blank" class="platform-btn">👍 Review on Facebook</a>
+  </div>
+  <p style="font-size:13px;color:rgba(255,255,255,.35);margin-top:20px;">Update these links with your actual Google Business Profile and Facebook page URLs</p>
+</div>
+<div class="cta-banner">
+  <h2>READY TO JOIN OUR HAPPY CUSTOMERS?</h2>
+  <p>Free inspection. Written quote. No pressure.</p>
+  <a href="contact.html" class="btn btn-white">Get My Free Estimate →</a>
+</div>
+<div id="footer-placeholder"></div>
+<script src="js/layout.js"></script><script src="js/main.js"></script>
+</body>
+</html>

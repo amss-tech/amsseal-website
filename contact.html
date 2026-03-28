@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Free Estimate | A&M Seal and Shield</title>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}.reveal.visible{opacity:1;transform:none}
+.contact-section{background:var(--slate)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start;margin-top:56px}
+.contact-info h3{font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:var(--navy);text-transform:uppercase;margin-bottom:14px;line-height:.95}
+.contact-info h3 em{color:var(--teal);font-style:normal}
+.contact-info p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:24px}
+.contact-methods{display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
+.contact-method{display:flex;align-items:flex-start;gap:14px;background:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.cm-icon{font-size:24px;flex-shrink:0}
+.cm-text h4{font-weight:700;color:var(--navy);font-size:14px;margin-bottom:2px}
+.cm-text a,.cm-text p{font-size:15px;color:var(--teal);font-weight:600;text-decoration:none}
+.cm-text a:hover{text-decoration:underline}
+.response-badge{background:var(--teal-pale);border:1px solid rgba(0,145,122,.2);border-radius:12px;padding:14px 18px;font-size:14px;font-weight:700;color:var(--teal);display:flex;align-items:center;gap:8px}
+.referral-box{background:linear-gradient(135deg,var(--navy-mid),#0a2e22);border-radius:16px;padding:24px;margin-top:20px;color:#fff}
+.referral-box h4{font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:var(--teal-bright);margin-bottom:6px;text-transform:uppercase}
+.referral-box p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.55}
+.quote-form-card{background:#fff;border-radius:20px;padding:40px;box-shadow:0 8px 48px rgba(0,0,0,.1)}
+.quote-form-card h3{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:900;color:var(--navy);text-transform:uppercase;margin-bottom:4px}
+.quote-form-card .sub{font-size:14px;color:var(--muted);margin-bottom:24px}
+.form-section-label{font-size:11px;letter-spacing:3px;font-weight:700;color:var(--teal);text-transform:uppercase;margin:20px 0 12px;padding-top:16px;border-top:1px solid #e8ecf0}
+.form-section-label:first-of-type{margin-top:0;padding-top:0;border-top:none}
+.checkbox-group{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
+.checkbox-item{display:flex;align-items:center;gap:8px;cursor:pointer}
+.checkbox-item input{width:16px;height:16px;accent-color:var(--teal);cursor:pointer}
+.checkbox-item span{font-size:14px;color:var(--text)}
+.success-box{display:none;background:var(--teal-pale);border:2px solid var(--teal);border-radius:14px;padding:28px;text-align:center}
+.success-box h4{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:900;color:var(--teal);text-transform:uppercase;margin-bottom:8px}
+.success-box p{font-size:15px;color:var(--muted);line-height:1.65}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}.checkbox-group{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="page-hero">
+  <p class="page-hero-label">Let's Get Started</p>
+  <h1>GET YOUR<br/><em>FREE ESTIMATE</em></h1>
+  <p>Free on-site inspection. Written quote within 24 hours. No obligation, no pressure.</p>
+</div>
+<div id="trust-placeholder"></div>
+<section class="section contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3>WE RESPOND<br/><em>WITHIN 2 HOURS</em></h3>
+        <p>Fill out the form and we'll contact you to schedule your free crawl space inspection — typically within the same business day. Most jobs are scheduled within 48 hours of the estimate.</p>
+        <div class="contact-methods">
+          <div class="contact-method"><div class="cm-icon">📱</div><div class="cm-text"><h4>Call or Text</h4><a href="tel:+1xxxxxxxxxx">(xxx) xxx-xxxx</a></div></div>
+          <div class="contact-method"><div class="cm-icon">📧</div><div class="cm-text"><h4>Email</h4><a href="mailto:info@amsseal.com">info@amsseal.com</a></div></div>
+          <div class="contact-method"><div class="cm-icon">🕐</div><div class="cm-text"><h4>Hours</h4><p>Mon–Sat: 7:00 AM – 6:00 PM<br/>Emergency calls welcome</p></div></div>
+          <div class="contact-method"><div class="cm-icon">📍</div><div class="cm-text"><h4>Service Area</h4><p>Serving greater Alabama — Gadsden, Huntsville, Anniston &amp; surrounding areas</p></div></div>
+        </div>
+        <div class="response-badge">⚡ Average response time: under 2 hours</div>
+        <div class="referral-box" style="margin-top:20px">
+          <h4>Realtors &amp; Inspectors</h4>
+          <p>We offer a $100 referral reward for every completed job you send our way. Fast turnaround, written reports provided, and we keep you updated throughout. Call or email to set up a referral partnership.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="quote-form-card">
+          <h3>Request Your Free Estimate</h3>
+          <p class="sub">Takes less than 2 minutes. We'll do the rest.</p>
+          <div id="formSuccess" class="success-box">
+            <h4>✅ Request Received!</h4>
+            <p>Thank you! We'll be in touch within 2 hours to schedule your free crawl space inspection. We look forward to helping you.</p>
+          </div>
+          <form id="formFields" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="contact"/>
+            <p style="display:none"><label>Don't fill this out: <input name="bot-field"/></label></p>
+            <div class="form-section-label">Your Information</div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">First Name *</label><input class="form-input" id="fname" name="first-name" placeholder="John" required/></div>
+              <div class="form-group"><label class="form-label">Last Name *</label><input class="form-input" id="lname" name="last-name" placeholder="Smith" required/></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" id="phone" name="phone" type="tel" placeholder="(256) 555-0100" required/></div>
+              <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="email" name="email" type="email" placeholder="john@email.com"/></div>
+            </div>
+            <div class="form-section-label">Property Details</div>
+            <div class="form-group"><label class="form-label">Property Address *</label><input class="form-input" id="address" name="address" placeholder="123 Main St, Gadsden, AL" required/></div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">I Am A... *</label>
+                <select class="form-input" id="type" name="customer-type">
+                  <option value="">Select one</option>
+                  <option>Homeowner</option>
+                  <option>Real Estate Agent</option>
+                  <option>Home Inspector</option>
+                  <option>General Contractor</option>
+                  <option>Property Manager</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Approx. Crawl Space Sq Ft</label>
+                <select class="form-input" id="sqft" name="crawlspace-sqft">
+                  <option value="">Not sure</option>
+                  <option>Under 500 sq ft</option>
+                  <option>500 – 1,000 sq ft</option>
+                  <option>1,000 – 2,000 sq ft</option>
+                  <option>Over 2,000 sq ft</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-section-label">What Are You Experiencing?</div>
+            <div class="checkbox-group">
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="Musty smell / odor"/><span>Musty smell / odor</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="Visible mold or mildew"/><span>Visible mold or mildew</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="High humidity / moisture"/><span>High humidity / moisture</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="Sagging or soft floors"/><span>Sagging or soft floors</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="Pest issues"/><span>Pest issues</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="Pre-sale inspection"/><span>Pre-sale inspection</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="High energy bills"/><span>High energy bills</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="issue" value="Not sure — general check"/><span>Not sure — general check</span></label>
+            </div>
+            <div class="form-section-label">Additional Details</div>
+            <div class="form-group"><textarea class="form-input" id="notes" name="notes" placeholder="Tell us anything else about your situation..."></textarea></div>
+            <div class="form-group">
+              <label class="form-label">How Did You Hear About Us?</label>
+              <select class="form-input" id="source" name="referral-source">
+                <option value="">Select one</option>
+                <option>Google Search</option>
+                <option>Google Maps</option>
+                <option>Facebook</option>
+                <option>Real Estate Agent Referral</option>
+                <option>Home Inspector Referral</option>
+                <option>Friend / Family</option>
+                <option>Door Hanger / Flyer</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <button type="submit" class="form-submit">Submit My Free Estimate Request →</button>
+            <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:10px">🔒 Your information is never shared or sold.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="footer-placeholder"></div>
+<script src="js/layout.js"></script><script src="js/main.js"></script>
+<script>
+async function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const fname = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const address = document.getElementById('address').value.trim();
+  if (!fname || !phone || !address) { alert('Please fill in your name, phone number, and property address.'); return; }
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...'; btn.disabled = true;
+  try {
+    const formData = new FormData(form);
+    await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(formData).toString() });
+    form.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  } catch (err) {
+    btn.textContent = 'Submit My Free Estimate Request →'; btn.disabled = false;
+    alert('Something went wrong. Please call or text us directly at (xxx) xxx-xxxx.');
+  }
+}
+</script>
+</body>
+</html>

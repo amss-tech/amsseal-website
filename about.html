@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Us | A&M Seal and Shield</title>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}.reveal.visible{opacity:1;transform:none}
+.about-intro{background:#fff}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:56px}
+.intro-img-block{position:relative}
+.owner-img{width:100%;border-radius:20px;object-fit:cover;aspect-ratio:4/5;background:linear-gradient(135deg,var(--navy-mid),#0a2e22);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.owner-img-placeholder{display:flex;flex-direction:column;align-items:center;gap:12px;color:rgba(255,255,255,.3);padding:40px;text-align:center}
+.owner-img-placeholder .icon{font-size:64px;opacity:.3}
+.owner-img-placeholder p{font-size:13px;font-weight:600;letter-spacing:1px}
+.owner-badge{position:absolute;bottom:-20px;right:-20px;background:var(--teal);color:#fff;border-radius:14px;padding:16px 22px;box-shadow:0 8px 32px rgba(0,145,122,.35)}
+.owner-badge .num{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;line-height:1}
+.owner-badge .lbl{font-size:12px;font-weight:600;opacity:.85;margin-top:2px}
+.intro-text h2{font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin-bottom:18px;line-height:.95}
+.intro-text h2 em{color:var(--teal);font-style:normal}
+.intro-text p{font-size:16px;color:var(--muted);line-height:1.75;margin-bottom:14px}
+.intro-text .signature{font-size:15px;font-weight:700;color:var(--navy);margin-top:8px}
+.values-section{background:var(--slate)}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:52px}
+.value-card{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--card-shadow)}
+.value-icon{font-size:40px;margin-bottom:14px}
+.value-card h3{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.value-card p{font-size:14px;color:var(--muted);line-height:1.65}
+.mission-section{background:linear-gradient(135deg,var(--navy-mid),#0a2e22);padding:96px 48px;text-align:center}
+.mission-section h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,6vw,72px);font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;line-height:.95}
+.mission-section h2 em{color:var(--teal-bright);font-style:normal}
+.mission-section p{font-size:20px;color:rgba(255,255,255,.65);max-width:680px;margin:0 auto 36px;line-height:1.75}
+.service-area{background:#fff}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:52px}
+.area-map{background:var(--slate);border-radius:20px;padding:40px;text-align:center;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:2px dashed #dde3eb}
+.area-map-icon{font-size:64px;opacity:.5}
+.area-map p{font-size:14px;color:var(--muted);font-weight:600}
+.area-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.area-tag{background:var(--teal-pale);border:1px solid rgba(0,145,122,.2);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:600;color:var(--teal)}
+.cta-banner{background:linear-gradient(135deg,var(--teal),var(--teal-bright));padding:80px 48px;text-align:center}
+.cta-banner h2{font-family:'Barlow Condensed',sans-serif;font-size:58px;font-weight:900;color:#fff;text-transform:uppercase;margin-bottom:12px}
+.cta-banner p{color:rgba(255,255,255,.85);font-size:17px;margin-bottom:28px}
+.btn-white{background:#fff;color:var(--teal);font-weight:800}.btn-white:hover{background:var(--navy);color:#fff}
+@media(max-width:900px){.intro-grid,.area-grid{grid-template-columns:1fr}.values-grid{grid-template-columns:1fr 1fr}.mission-section{padding:64px 20px}.cta-banner{padding:56px 20px;}.cta-banner h2{font-size:44px}}
+@media(max-width:560px){.values-grid{grid-template-columns:1fr}.area-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="page-hero">
+  <p class="page-hero-label">Our Story</p>
+  <h1>BUILT ON<br/><em>HONEST WORK</em></h1>
+  <p>A local Alabama company doing one thing — protecting homes from the ground up.</p>
+</div>
+<div id="trust-placeholder"></div>
+<section class="section about-intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-img-block reveal">
+        <div class="owner-img">
+          <img src="images/owner.jpg" alt="Owner of A&M Seal and Shield" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<div class=\'owner-img-placeholder\'><div class=\'icon\'>👷</div><p>Add: images/owner.jpg</p></div>'"/>
+        </div>
+        <div class="owner-badge">
+          <div class="num">AL</div>
+          <div class="lbl">Licensed &amp; Insured</div>
+        </div>
+      </div>
+      <div class="intro-text reveal">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2>PROTECTING<br/><em>ALABAMA HOMES</em></h2>
+        <p>A&M Seal and Shield was founded on a simple belief: homeowners deserve a crawl space specialist they can actually trust — someone who shows up, does the work right, and stands behind it with a written warranty.</p>
+        <p>We're not a franchise. We're a locally owned Alabama LLC focused exclusively on crawl space encapsulation and moisture control. Every job is owner-operated, which means the person who quotes your job is the same person who installs it.</p>
+        <p>Alabama's humid climate creates some of the worst conditions for crawl spaces in the country. We've seen what uncontrolled moisture does to homes — and we've made it our mission to stop it before it becomes a $20,000 structural repair.</p>
+        <div class="signature">— The A&amp;M Seal and Shield Team</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section values-section">
+  <div class="container">
+    <p class="section-eyebrow reveal">What Drives Us</p>
+    <h2 class="section-title reveal">OUR <em>VALUES</em></h2>
+    <div class="values-grid">
+      <div class="value-card reveal"><div class="value-icon">🤝</div><h3>Honesty First</h3><p>We tell you what you actually need — not the most expensive option. If your crawl space only needs a repair, that's what we'll quote you.</p></div>
+      <div class="value-card reveal"><div class="value-icon">⚡</div><h3>Responsive, Always</h3><p>We respond to every inquiry within 2 hours and schedule estimates within 48 hours. We know that when you reach out, you need help now — not next week.</p></div>
+      <div class="value-card reveal"><div class="value-icon">📋</div><h3>Documented Everything</h3><p>Before, during, and after photos on every job. Written quotes before any work starts. Written warranty when we're done. No surprises, ever.</p></div>
+      <div class="value-card reveal"><div class="value-icon">🛡️</div><h3>Quality That Lasts</h3><p>We only install 20-mil vapor barrier — the professional standard — because we want our work to last decades, not just long enough to avoid a callback.</p></div>
+      <div class="value-card reveal"><div class="value-icon">🏘️</div><h3>Community Roots</h3><p>We live and work here. Our reputation in this community is everything to us, which means your satisfaction isn't just a business metric — it's personal.</p></div>
+      <div class="value-card reveal"><div class="value-icon">💰</div><h3>Fair Pricing</h3><p>Itemized, transparent quotes with no hidden fees or high-pressure upselling. You know exactly what you're paying for before any work begins.</p></div>
+    </div>
+  </div>
+</section>
+<section class="mission-section">
+  <h2>OUR MISSION IS<br/><em>SIMPLE</em></h2>
+  <p>"Protect what's under your home so you never have to think about it again."</p>
+  <a href="contact.html" class="btn btn-primary">Schedule My Free Estimate</a>
+</section>
+<section class="section service-area">
+  <div class="container">
+    <p class="section-eyebrow reveal">Where We Work</p>
+    <h2 class="section-title reveal">OUR SERVICE <em>AREA</em></h2>
+    <div class="area-grid">
+      <div class="area-map reveal">
+        <div class="area-map-icon">📍</div>
+        <p>Service area map — update with your actual coverage region</p>
+        <small style="color:var(--muted);font-size:12px;">You can embed a Google Maps iframe here once your Google Business Profile is set up</small>
+      </div>
+      <div class="reveal">
+        <p class="section-desc" style="margin-bottom:28px;">We serve residential and commercial customers throughout Alabama. Don't see your city? Give us a call — we may still be able to help depending on project size.</p>
+        <div class="area-list">
+          <div class="area-tag">📍 Gadsden</div>
+          <div class="area-tag">📍 Huntsville</div>
+          <div class="area-tag">📍 Birmingham</div>
+          <div class="area-tag">📍 Anniston</div>
+          <div class="area-tag">📍 Talladega</div>
+          <div class="area-tag">📍 Albertville</div>
+          <div class="area-tag">📍 Attalla</div>
+          <div class="area-tag">📍 Rainbow City</div>
+          <div class="area-tag">📍 Glencoe</div>
+          <div class="area-tag">📍 Surrounding Areas</div>
+        </div>
+        <p style="font-size:13px;color:var(--muted);margin-top:16px;">Not sure if we cover your area? <a href="contact.html" style="color:var(--teal);font-weight:700;">Contact us</a> and we'll let you know.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cta-banner">
+  <h2>LET'S PROTECT YOUR HOME.</h2>
+  <p>Free on-site inspection. Written quote in 24 hours. No pressure.</p>
+  <a href="contact.html" class="btn btn-white">Get My Free Estimate →</a>
+</div>
+<div id="footer-placeholder"></div>
+<script src="js/layout.js"></script><script src="js/main.js"></script>
+</body>
+</html>

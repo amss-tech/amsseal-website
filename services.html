@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Services | A&M Seal and Shield</title>
+<meta name="description" content="Crawl space encapsulation, drainage systems, dehumidifier installation, repairs, and pre-sale inspections in Alabama."/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s,transform .55s}.reveal.visible{opacity:1;transform:none}
+.services-section{background:var(--slate)}
+.svc-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:64px}
+.svc-detail-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--card-shadow);display:flex;flex-direction:column}
+.svc-detail-header{background:linear-gradient(135deg,var(--navy-mid),#0a2e22);padding:28px 28px 22px}
+.svc-detail-header .icon{font-size:40px;margin-bottom:10px}
+.svc-detail-header h3{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:900;color:#fff;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.svc-detail-header .tag{display:inline-block;background:rgba(0,201,167,.2);color:var(--teal-bright);font-size:10px;font-weight:800;letter-spacing:2px;padding:3px 10px;border-radius:100px;text-transform:uppercase}
+.svc-detail-body{padding:24px 28px;flex:1;display:flex;flex-direction:column}
+.svc-detail-body p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:18px}
+.svc-includes{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px;flex:1}
+.svc-includes li{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--text);line-height:1.45}
+.svc-includes li::before{content:'✓';color:var(--teal);font-weight:800;flex-shrink:0;margin-top:1px}
+.svc-detail-body .btn{align-self:flex-start;margin-top:auto}
+.pricing-note{background:var(--teal-pale);border-radius:10px;padding:10px 14px;font-size:13px;font-weight:600;color:var(--teal);margin-bottom:18px}
+.why-section{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+.why-card{border-radius:var(--radius);padding:28px 22px;text-align:center;border:1.5px solid #e8ecf0;transition:all .25s}
+.why-card:hover{border-color:var(--teal);transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,145,122,.1)}
+.why-icon{font-size:40px;margin-bottom:12px}
+.why-card h4{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.why-card p{font-size:13px;color:var(--muted);line-height:1.55}
+.faq-section{background:var(--slate)}
+.faq-list{max-width:780px;margin:48px auto 0;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.faq-q{width:100%;padding:18px 22px;background:none;border:none;text-align:left;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-q span{font-size:20px;transition:transform .3s;flex-shrink:0}
+.faq-q.open span{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s;font-size:15px;color:var(--muted);line-height:1.7}
+.faq-a-inner{padding:0 22px 18px}
+.cta-banner{background:linear-gradient(135deg,var(--teal),var(--teal-bright));padding:80px 48px;text-align:center}
+.cta-banner h2{font-family:'Barlow Condensed',sans-serif;font-size:58px;font-weight:900;color:#fff;text-transform:uppercase;margin-bottom:12px}
+.cta-banner p{color:rgba(255,255,255,.85);font-size:17px;margin-bottom:28px}
+.btn-white{background:#fff;color:var(--teal);font-weight:800}.btn-white:hover{background:var(--navy);color:#fff}
+@media(max-width:900px){.svc-detail-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.cta-banner{padding:56px 20px}.cta-banner h2{font-size:44px}}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="page-hero">
+  <p class="page-hero-label">What We Offer</p>
+  <h1>OUR <em>SERVICES</em></h1>
+  <p>Complete crawl space solutions for homeowners, real estate professionals, and contractors across Alabama.</p>
+</div>
+<div id="trust-placeholder"></div>
+<section class="section services-section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Full Service Menu</p>
+    <h2 class="section-title reveal">EVERYTHING YOUR<br/><em>CRAWL SPACE NEEDS</em></h2>
+    <div class="svc-detail-grid">
+      <div class="svc-detail-card reveal">
+        <div class="svc-detail-header"><div class="icon">🛡️</div><h3>Full Encapsulation</h3><span class="tag">Most Popular</span></div>
+        <div class="svc-detail-body">
+          <p>Our signature service creates a permanently sealed crawl space using heavy-duty 20-mil reinforced vapor barrier on floors and walls — eliminating ground moisture at the source.</p>
+          <div class="pricing-note">Typical range: $3,000 – $8,000 depending on square footage</div>
+          <ul class="svc-includes"><li>20-mil reinforced polyethylene vapor barrier</li><li>Wall coverage up to rim joists</li><li>Sealed seams with permanent tape</li><li>Vent covers and access door sealing</li><li>Before &amp; after photo documentation</li><li>Written transferable warranty</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+        </div>
+      </div>
+      <div class="svc-detail-card reveal">
+        <div class="svc-detail-header"><div class="icon">💧</div><h3>Drainage Systems</h3><span class="tag">Flood Protection</span></div>
+        <div class="svc-detail-body">
+          <p>For crawl spaces with active water intrusion or standing water, we install interior drainage channels and sump pumps that actively remove water before it causes damage.</p>
+          <div class="pricing-note">Typical range: $1,500 – $4,500 depending on system size</div>
+          <ul class="svc-includes"><li>Interior perimeter drainage channels</li><li>Sump pump selection and installation</li><li>Battery backup option for power outages</li><li>Discharge line routing away from foundation</li><li>Integration with existing encapsulation</li><li>Annual maintenance plan available</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+        </div>
+      </div>
+      <div class="svc-detail-card reveal">
+        <div class="svc-detail-header"><div class="icon">🌬️</div><h3>Dehumidifier Installation</h3><span class="tag">Climate Control</span></div>
+        <div class="svc-detail-body">
+          <p>Even after encapsulation, humidity can build up without active air management. Commercial-grade crawl space dehumidifiers maintain safe humidity levels automatically.</p>
+          <div class="pricing-note">Typical range: $1,200 – $2,800 installed</div>
+          <ul class="svc-includes"><li>Commercial-grade crawl space dehumidifier</li><li>Automatic drainage / condensate line</li><li>Humidity sensor and controller</li><li>Energy-efficient operation</li><li>Sized correctly for your square footage</li><li>Annual filter service available</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+        </div>
+      </div>
+      <div class="svc-detail-card reveal">
+        <div class="svc-detail-header"><div class="icon">🔧</div><h3>Repairs &amp; Upgrades</h3><span class="tag">Repair Work</span></div>
+        <div class="svc-detail-body">
+          <p>Existing encapsulation that's failing, torn, or improperly installed can be worse than no encapsulation. We assess and repair existing systems to restore full protection.</p>
+          <div class="pricing-note">Quoted on-site after assessment — free estimate</div>
+          <ul class="svc-includes"><li>Damaged barrier section replacement</li><li>Seam re-sealing and re-taping</li><li>Vent and access door re-sealing</li><li>Upgrading thin (6-mil) to heavy-duty 20-mil</li><li>Mold treatment referrals if needed</li><li>System assessment report provided</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+        </div>
+      </div>
+      <div class="svc-detail-card reveal">
+        <div class="svc-detail-header"><div class="icon">🏠</div><h3>Pre-Sale Inspections</h3><span class="tag">Real Estate</span></div>
+        <div class="svc-detail-body">
+          <p>Crawl space issues flagged in a home inspection can kill a real estate deal. We provide fast, professional assessments with written reports that satisfy buyers and lenders.</p>
+          <div class="pricing-note">Inspection report: $150 – $250 (credited toward any work performed)</div>
+          <ul class="svc-includes"><li>Full crawl space condition assessment</li><li>Written report delivered within 24 hours</li><li>Photo documentation included</li><li>Moisture and humidity readings</li><li>Remediation recommendations with pricing</li><li>Direct communication with agents and inspectors</li></ul>
+          <a href="contact.html" class="btn btn-primary">Book an Inspection →</a>
+        </div>
+      </div>
+      <div class="svc-detail-card reveal">
+        <div class="svc-detail-header"><div class="icon">📋</div><h3>Annual Maintenance Plans</h3><span class="tag">Maintenance</span></div>
+        <div class="svc-detail-body">
+          <p>A one-time encapsulation is permanent, but an annual inspection protects your investment, maintains warranty validity, and catches any issues before they become problems.</p>
+          <div class="pricing-note">Annual plan: $199/year — priority scheduling included</div>
+          <ul class="svc-includes"><li>Annual crawl space inspection</li><li>Barrier integrity check and minor seam repairs</li><li>Dehumidifier filter replacement (if applicable)</li><li>Sump pump test (if applicable)</li><li>Moisture and humidity report</li><li>Priority scheduling — no wait list</li></ul>
+          <a href="contact.html" class="btn btn-primary">Sign Up →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section why-section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Why Choose A&amp;M</p>
+    <h2 class="section-title reveal">THE DIFFERENCE IS IN<br/><em>THE DETAILS</em></h2>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon">👤</div><h4>Owner on Every Job</h4><p>The person who quotes your job is the same person who installs it. No crews sent by a call center.</p></div>
+      <div class="why-card reveal"><div class="why-icon">📸</div><h4>Full Documentation</h4><p>Before, during, and after photos of every job so you have a permanent record for insurance or resale.</p></div>
+      <div class="why-card reveal"><div class="why-icon">⚡</div><h4>48-Hour Scheduling</h4><p>We respond within 2 hours and schedule most jobs within 48–72 hours. Real estate deals won't wait.</p></div>
+      <div class="why-card reveal"><div class="why-icon">📄</div><h4>Written Warranty</h4><p>Every encapsulation job comes with a written warranty you keep and can transfer to a new buyer.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section faq-section">
+  <div class="container">
+    <p class="section-eyebrow" style="text-align:center">Common Questions</p>
+    <h2 class="section-title" style="text-align:center">FREQUENTLY<br/><em>ASKED QUESTIONS</em></h2>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">How long does a full encapsulation take? <span>+</span></button><div class="faq-a"><div class="faq-a-inner">Most residential crawl space encapsulations are completed in one day. Larger spaces or jobs that include drainage and dehumidifier installation may take 2 days. We'll give you a specific timeline in your written quote.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Do I need to do anything to prepare for the job? <span>+</span></button><div class="faq-a"><div class="faq-a-inner">Generally no. We handle everything from start to finish. If there is significant debris or storage in your crawl space, we may ask you to clear it beforehand — but we'll let you know in advance during the estimate.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Will encapsulation really reduce my energy bills? <span>+</span></button><div class="faq-a"><div class="faq-a-inner">Yes — studies show that sealed crawl spaces can reduce HVAC energy consumption by 15–25%. When your crawl space is conditioned and sealed, your HVAC doesn't have to fight against constant moisture infiltration from below.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Does encapsulation prevent all mold? <span>+</span></button><div class="faq-a"><div class="faq-a-inner">Encapsulation eliminates the primary cause of crawl space mold — excess moisture. If existing mold is present, we'll recommend remediation before sealing. Our system then prevents new mold from forming by removing the conditions it needs to grow.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">Is a permit required for crawl space encapsulation in Alabama? <span>+</span></button><div class="faq-a"><div class="faq-a-inner">Permit requirements vary by county. For standard vapor barrier installation, most Alabama jurisdictions do not require a permit. For drainage or electrical work, some areas may. We'll clarify during your estimate.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)">What's the difference between 6-mil and 20-mil vapor barrier? <span>+</span></button><div class="faq-a"><div class="faq-a-inner">6-mil barrier is thin, tears easily, and degrades quickly — it's what most DIY or budget installs use. 20-mil is the professional standard: puncture-resistant, lasts decades, and maintains full integrity even with foot traffic during maintenance visits. We only install 20-mil.</div></div></div>
+    </div>
+  </div>
+</section>
+<div class="cta-banner">
+  <h2>READY TO GET STARTED?</h2>
+  <p>Free on-site inspection. Written quote in 24 hours. Most jobs scheduled within 48 hours.</p>
+  <a href="contact.html" class="btn btn-white">Get My Free Estimate →</a>
+</div>
+<div id="footer-placeholder"></div>
+<script src="js/layout.js"></script><script src="js/main.js"></script>
+<script>function toggleFaq(btn){btn.classList.toggle('open');const ans=btn.nextElementSibling;ans.style.maxHeight=btn.classList.contains('open')?ans.scrollHeight+'px':'0';}</script>
+</body>
+</html>
